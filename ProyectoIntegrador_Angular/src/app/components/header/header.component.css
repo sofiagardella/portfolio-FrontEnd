@@ -1,0 +1,61 @@
+#banner{
+    display: flex;
+    height: 400px;
+    margin: 0;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+#header{
+    display: flex;
+    z-index: -1;
+}
+
+#info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#profile-image {
+    border-radius: 50%;
+    width: 152px;
+    height: 152px;
+    margin-top: -70px;
+    z-index: 1;
+}
+
+#info-img{
+    margin-top: -120;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#datos-personales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+#container{
+    background-color: #ffffff;
+
+}
+
+
+body{
+   
+background-color: #CEE5D0;
+margin-left: 10px;
+margin-right: 10px;
+
+}
+
+
+
