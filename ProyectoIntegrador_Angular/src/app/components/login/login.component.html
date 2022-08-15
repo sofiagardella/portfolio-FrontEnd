@@ -1,0 +1,39 @@
+<body>
+<div  id="container" class="container col-4 border border-white border-3 rounded-1 border-light position-absolute top-50 start-50 translate-middle p-4">
+  <form [formGroup]="form">
+
+    <div id="email" class="mb-3">
+      <h2>Iniciá sesión</h2>
+      <label for="exampleInputEmail1" class="form-label">Email</label>
+      <input type="email" formControlName= "email" [ngClass]="{'is-invalid': Email?.errors && Email?.touched,'is-valid': !Email?.errors && Email?.touched}"  class="form-control" id="exampleInputEmail1">
+      <div *ngIf="Email?.errors && Email?.touched">
+        <p *ngIf="Email?.hasErrors('required')" class="text-danger">
+            Ingresá tu mail.
+        </p>
+        <p *ngIf="Email?.hasErrors('email')" class="text-danger">
+            El formato del mail debe ser válido.
+        </p>
+      </div>
+    </div>
+
+    <div id="contraseña" class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Constraseña</label>
+      <input type="password" formControlName= "password" [ngClass]="{'is-invalid': Password?.errors && Password?.touched,'is-valid': !Password?.errors && Password?.touched}"  class="form-control" id="exampleInputPassword1">
+      <div *ngIf="Password?.errors && Password?.touched">
+        <p *ngIf="Password?.hasErrors('required')" class="text-danger">
+            Ingresá tu contraseña.
+        </p>
+        <p *ngIf="Email?.hasErrors('email')" class="text-danger">
+            La contraseña debe ser de 8 o más caracteres.
+        </p>
+      </div>
+    </div>
+
+    <button id="submit" type="submit" class="mb-3 btn btn-primary">Iniciar sesión</button>
+  </form>
+
+</div>
+
+
+</body>
+
