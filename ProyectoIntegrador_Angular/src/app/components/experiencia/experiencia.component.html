@@ -1,28 +1,27 @@
 <div id="container" class="container border border-1 rounded-2 border-dark   mb-4">
     <div class="row col-12">
-    <div class="col-9 m-3"><h2 class="mb-4 fw-semibold">Experiencia</h2></div>
-    <div class="col-1 mt-3 me-0 btn-edit "><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
-    <div class="col-1 mt-3 me-0 btn-edit "><a href="#" class="btn-right"><i class="fa-solid fa-trash-can"></i></a></div>
-</div>
-   
+        <div class="col-8 m-3"><h2 class="mb-4 fw-semibold">Experiencia</h2></div>
+        <div class="col-1 mt-3 me-0 btn-edit"><a href="#" class="btn-right"><i class="fa-solid fa-pen-to-square"></i></a></div>
+        <div class="col-1 mt-3 me-0 btn-edit"><a href="#" class="btn-right"><i class="fa-solid fa-trash-can"></i></a></div>
+        <div class="col-1 mt-3 me-0 btn-edit"><a href="#" *ngIf="isLogged" class="btn-right"><i routerLink="/nuevaexp" class="fa-solid fa-plus"></i></a></div>
+    </div>
 
-
-    <!-- TRABAJO2 -->
+    <!-- EXPERIENCIA 1 -->
     <div class="row">
         <div class="col-12 col-lg-1 "><img class="img-fluid"
                 src="https://media-exp2.licdn.com/dms/image/C4D0BAQEomeVlxBHADw/company-logo_200_200/0/1623681551941?e=1665014400&v=beta&t=ZbWKWGlYlfO55SvdQ3VunFplSQmQYYoH25mASwaZn2Q"
                 alt=""></div>
         <div class="col-12 col-lg-6 ">
-            <div class="row mb-3">
-                <div class="col-12 fs-4">Asistente Administrativa</div>
-                <div class="col-12 text-secondary">Ministerio del Interior</div>
-                <div class="col-12 text-secondary">2014-actualidad</div>
+            <div *NgFor="let Experiencia of expe" class="row mb-3">
+                <div class="col-12 fs-4">{{Experiencia.puesto}}</div>
+                <div class="col-12 text-secondary">{{Experiencia.empresa}}</div>
+                <div class="col-12 text-secondary">{{Experiencia.fecha}}</div>
             </div>
         </div>
     </div>
 
 
-    <!-- TRABAJO2 -->
+    <!-- EXPERIENCIA 2 -->
     <div class="row">
         <div class="col-12 col-lg-1 "><img class="img-fluid"
                 src="https://media-exp2.licdn.com/dms/image/C4D0BAQEomeVlxBHADw/company-logo_200_200/0/1623681551941?e=1665014400&v=beta&t=ZbWKWGlYlfO55SvdQ3VunFplSQmQYYoH25mASwaZn2Q"
