@@ -15,6 +15,7 @@ export class TokenService {
   constructor() { }
 
   public setToken(token: string): void {
+    console.log("hola sofi este es el token", token)
     window.sessionStorage.removeItem(TOKEN_KEY);
     window.sessionStorage.setItem(TOKEN_KEY, token);
   }

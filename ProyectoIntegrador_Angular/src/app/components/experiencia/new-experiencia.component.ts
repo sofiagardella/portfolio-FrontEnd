@@ -8,7 +8,6 @@ import { ExperienciaService } from 'src/app/service/experiencia.service';
   templateUrl: './new-experiencia.component.html',
   styles: [
   ],
-  exportAs: 'ngForm'
 })
 export class NewExperienciaComponent implements OnInit {
   puesto: string = '';

@@ -15,6 +15,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http'
 import { NewExperienciaComponent } from './components/experiencia/new-experiencia.component';
+import { NewEducacionComponent } from './components/educacion/new-educacion.component';
+import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
+import { EditEducacionComponent } from './components/educacion/edit-educacion.component';
+import { NewProyectosComponent } from './components/proyectos/new-proyectos.component';
+import { EditProyectosComponent } from './components/proyectos/edit-proyectos.component';
+import { NewSkillsComponent } from './components/skills/new-skills.component';
+import { EditSkillsComponent } from './components/skills/edit-skills.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +34,15 @@ import { NewExperienciaComponent } from './components/experiencia/new-experienci
     ProyectosComponent,
     LoginComponent,
     PortfolioComponent,
-    NewExperienciaComponent
+    NewExperienciaComponent,
+    NewEducacionComponent,
+    EditExperienciaComponent,
+    EditEducacionComponent,
+    NewProyectosComponent,
+    EditProyectosComponent,
+    NewSkillsComponent,
+    EditSkillsComponent
+  
   ],
   imports: [
     BrowserModule,
@@ -36,7 +51,7 @@ import { NewExperienciaComponent } from './components/experiencia/new-experienci
     ReactiveFormsModule,
     CommonModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
   ],
 
   exports: [

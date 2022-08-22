@@ -30,6 +30,7 @@ export class LoginComponent implements OnInit {
   }
 
   onLogin(): void{
+    console.log("holaa")
     this.loginUsuario = new LoginUsuario(this.nombreUsuario, this.password); 
     this.authService.login(this.loginUsuario).subscribe(data =>{
         this.isLogged = true;
@@ -44,6 +45,7 @@ export class LoginComponent implements OnInit {
         this.isLogginFail = true;
         this.errMsj = err.error.mensaje;
         console.log(this.errMsj);
+
         
       })
   }

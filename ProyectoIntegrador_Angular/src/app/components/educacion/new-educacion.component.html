@@ -3,22 +3,22 @@
         <div>
             <Form ngForm #F="ngForm" (ngSubmit)="onCreate()" novalidate >
             <div class="form-group">
-                <label for="puesto">Nombre del puesto</label>
-                <input type="text" class="form-control" id="puesto" name="puesto" [(ngModel)]="puesto" required>
+                <label for="carrera">Nombre del estudio</label>
+                <input type="text" class="form-control" id="carrera" name="carrera" [(ngModel)]="carrera" required>
             </div>
             <div class="form-group">
-                <label for="empresa">Empresa</label>
-                <input type="text" class="form-control" id="empresa" name="empresa" [(ngModel)]="empresa" required>
+                <label for="institucion">Institución</label>
+                <input type="text" class="form-control" id="institucion" name="institucion" [(ngModel)]="institucion" required>
             </div>
             <div class="form-group">
                 <label for="fecha">Fecha</label>
                 <input type="text" class="form-control" id="fecha" name="fecha" [(ngModel)]="fecha" required>
             </div>
            <div class="form-group">
-                <label for="img">Img</label>
+                <label for="img">Imagen</label>
                 <input type="text" class="form-control" id="img" name="img" [(ngModel)]="img" >
             </div> 
-            <button type="submit" class="btn btn-dark">Agregar experiencia</button>
+            <button type="submit" class="btn btn-dark">Agregar educación</button>
             </Form>
         </div>
     </div>
