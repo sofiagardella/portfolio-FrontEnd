@@ -12,7 +12,7 @@ export class ExperienciaComponent implements OnInit {
   Experiencia: Experiencia = new Experiencia("","","","");
   experiencia!: Experiencia[];
 
-  constructor(private SExperiencia: ExperienciaService, private tokenService: TokenService ) { }
+  constructor(private servExpe: ExperienciaService, private tokenService: TokenService ) { }
 
   isLogged = false;
 
@@ -26,12 +26,12 @@ export class ExperienciaComponent implements OnInit {
   }
 
   cargarExperiencia(): void {
-    this.SExperiencia.lista().subscribe(data => { this.experiencia = data; })
+    this.servExpe.lista().subscribe(data => { this.experiencia = data; })
   }
 
   delete(id?: number){
     if(id != undefined){
-      this.SExperiencia.delete(id).subscribe(
+      this.servExpe.delete(id).subscribe(
         data => {
           this.cargarExperiencia();
         }, err => {

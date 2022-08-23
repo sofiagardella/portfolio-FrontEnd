@@ -9,8 +9,8 @@ import { TokenService } from 'src/app/service/token.service';
   styleUrls: ['./educacion.component.css']
 })
 export class EducacionComponent implements OnInit {
-
-  edu: Educacion[] = [];
+  educacion: Educacion = new Educacion("","","","");
+  edu: Educacion[];
 
   constructor(private SEducacion: EducacionService, private tokenService: TokenService ) { }
 

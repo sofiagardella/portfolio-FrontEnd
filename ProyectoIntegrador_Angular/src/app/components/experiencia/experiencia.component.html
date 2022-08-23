@@ -1,38 +1,22 @@
 <div id="container" class="container border border-1 rounded-2 border-dark   mb-4">
     <div class="row col-12">
         <div class="col-8 m-3"><h2 class="mb-4 fw-semibold">Experiencia</h2></div>
-        <div class="col-1 mt-3 me-0 btn-edit"><a href="/editexp/{{Experiencia.id}}" class="btn-right"><i class="fa-solid fa-pen-to-square"></i></a></div>
-        <div class="col-1 mt-3 me-0 btn-edit"><a href="#" class="btn-right"><i class="fa-solid fa-trash-can"></i></a></div>
         <div class="col-1 mt-3 me-0 btn-edit"><a href="/nuevaexp" class="btn-right" *ngIf="isLogged"><i class="fa-solid fa-plus"></i></a></div>
     </div>
-    <!-- *ngIf="isLogged" -->
-    <!-- EXPERIENCIA 1 -->
-    <div class="row">
+    <div class="row" *ngFor="let Experiencia of experiencia">
         <div class="col-12 col-lg-1"><img class="img-fluid"
                 src="https://media-exp2.licdn.com/dms/image/C4D0BAQEomeVlxBHADw/company-logo_200_200/0/1623681551941?e=1665014400&v=beta&t=ZbWKWGlYlfO55SvdQ3VunFplSQmQYYoH25mASwaZn2Q"
                 alt=""></div>
         <div class="col-12 col-lg-6 ">
-            <div *ngFor="let Experiencia of experiencia" class="row mb-3">
-                <div class="col-12 fs-4">{{Experiencia.puesto}}</div>
-                <div class="col-12 text-secondary">{{Experiencia.empresa}}</div>
-                <div class="col-12 text-secondary">{{Experiencia.fecha}}</div>
-                <div class="col-12 text-secondary">{{Experiencia.img}}</div>
+            <div class="row mb-3">
+                <div class="col-10 fs-4">{{Experiencia.puesto}}</div>
+                <div class="col-10 text-secondary">{{Experiencia.empresa}}</div>
+                <div class="col-10 text-secondary">{{Experiencia.fecha}}</div>
+                <div class="col-1 mt-3 me-0 btn-edit"><a href="/editexp/{{Experiencia.id}}" class="btn-right" *ngIf="isLogged"><i class="fa-solid fa-pen-to-square"></i></a></div>
+                <div class="col-1 mt-3 me-0 btn-edit"><a href="#" class="btn-right" *ngIf="isLogged" (click)="delete(Experiencia.id)"><i class="fa-solid fa-trash-can"></i></a></div>
             </div>
         </div>
     </div>
 <br>
-
-    <!-- EXPERIENCIA 2 -->
-    <div class="row">
-        <div class="col-12 col-lg-1 "><img class="img-fluid"
-                src="https://media-exp2.licdn.com/dms/image/C4D0BAQEomeVlxBHADw/company-logo_200_200/0/1623681551941?e=1665014400&v=beta&t=ZbWKWGlYlfO55SvdQ3VunFplSQmQYYoH25mASwaZn2Q"
-                alt=""></div>
-        <div class="col-12 col-lg-6 ">
-            <div class="row mb-3">
-                <div class="col-12 fs-4">Profesora de Inglés</div>
-                <div class="col-12 text-secondary">Freelance</div>
-                <div class="col-12 text-secondary">2013-2021</div>
-            </div>
-        </div>
-    </div>
 </div>
+

@@ -11,7 +11,7 @@ import { SkillsService } from 'src/app/service/skills.service';
 })
 export class NewSkillsComponent implements OnInit {
   habilidad: string = '';
-  avance: string = '';
+  avance: string = "";
 
   constructor(private sSkills: SkillsService, private router: Router) { }
 

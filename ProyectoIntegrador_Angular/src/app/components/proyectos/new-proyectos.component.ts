@@ -11,7 +11,7 @@ import { ProyectosService } from 'src/app/service/proyectos.service';
 })
 export class NewProyectosComponent implements OnInit {
   nombre: string = '';
-  año: string = '';
+  fecha: string = '';
   about: string = '';
 
 
@@ -21,7 +21,7 @@ export class NewProyectosComponent implements OnInit {
   }
 
 onCreate(): void{
-  const proye = new Proyectos(this.nombre, this.año, this.about);
+  const proye = new Proyectos(this.nombre, this.fecha, this.about);
   this.sProyectos.save(proye).subscribe(data => {alert("Proyecto añadido");
   this.router.navigate(['']);
       }, err => {

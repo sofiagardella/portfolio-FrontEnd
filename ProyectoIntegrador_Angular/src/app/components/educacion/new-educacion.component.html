@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
         <div>
-            <Form ngForm #F="ngForm" (ngSubmit)="onCreate()" novalidate >
+            <form ngForm #F="ngForm" (ngSubmit)="onCreate()" novalidate >
             <div class="form-group">
                 <label for="carrera">Nombre del estudio</label>
                 <input type="text" class="form-control" id="carrera" name="carrera" [(ngModel)]="carrera" required>
@@ -19,7 +19,7 @@
                 <input type="text" class="form-control" id="img" name="img" [(ngModel)]="img" >
             </div> 
             <button type="submit" class="btn btn-dark">Agregar educación</button>
-            </Form>
+            </form>
         </div>
     </div>
 </div>

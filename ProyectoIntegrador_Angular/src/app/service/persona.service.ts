@@ -13,7 +13,7 @@ export class PersonaService {
   constructor(private http: HttpClient) { }
 
   public getPersona(): Observable<persona>{
-    return this.http.get<persona>(this.URL+ 'ver/perfil/'); //chequear el VERR
+    return this.http.get<persona>(this.URL+ 'ver/perfil');
 
   }
 }
