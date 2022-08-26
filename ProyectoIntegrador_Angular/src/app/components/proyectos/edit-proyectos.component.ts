@@ -11,12 +11,12 @@ import { ProyectosService } from 'src/app/service/proyectos.service';
 export class EditProyectosComponent implements OnInit {
     proyectos: Proyectos = null;
 
-  constructor(private sProyectos: ProyectosService, private activatedRouter: ActivatedRoute,
+  constructor(private proyeServ: ProyectosService, private activatedRouter: ActivatedRoute,
     private router: Router) { }
 
   ngOnInit(): void {
   const id = this.activatedRouter.snapshot.params['id'];
-  this.sProyectos.detail(id).subscribe(
+  this.proyeServ.detail(id).subscribe(
    data =>{
       this.proyectos = data;
       }, err =>{
@@ -28,7 +28,7 @@ export class EditProyectosComponent implements OnInit {
 
   onUpdate(): void{
     const id = this.activatedRouter.snapshot.params['id'];
-    this.sProyectos.update(id, this.proyectos).subscribe(
+    this.proyeServ.update(id, this.proyectos).subscribe(
       data => {
         this.router.navigate(['']);
       }, err =>{

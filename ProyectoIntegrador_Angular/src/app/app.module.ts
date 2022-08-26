@@ -20,8 +20,7 @@ import { EditExperienciaComponent } from './components/experiencia/edit-experien
 import { EditEducacionComponent } from './components/educacion/edit-educacion.component';
 import { NewProyectosComponent } from './components/proyectos/new-proyectos.component';
 import { EditProyectosComponent } from './components/proyectos/edit-proyectos.component';
-import { NewSkillsComponent } from './components/skills/new-skills.component';
-import { EditSkillsComponent } from './components/skills/edit-skills.component';
+
 
 @NgModule({
   declarations: [
@@ -40,8 +39,6 @@ import { EditSkillsComponent } from './components/skills/edit-skills.component';
     EditEducacionComponent,
     NewProyectosComponent,
     EditProyectosComponent,
-    NewSkillsComponent,
-    EditSkillsComponent
   
   ],
   imports: [
@@ -52,6 +49,7 @@ import { EditSkillsComponent } from './components/skills/edit-skills.component';
     CommonModule,
     HttpClientModule,
     FormsModule,
+  
   ],
 
   exports: [

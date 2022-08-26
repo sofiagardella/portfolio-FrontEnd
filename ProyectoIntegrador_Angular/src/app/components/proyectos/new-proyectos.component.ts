@@ -15,14 +15,14 @@ export class NewProyectosComponent implements OnInit {
   about: string = '';
 
 
-  constructor(private sProyectos: ProyectosService, private router: Router) { }
+  constructor(private servProye: ProyectosService, private router: Router) { }
 
   ngOnInit(): void {
   }
 
 onCreate(): void{
   const proye = new Proyectos(this.nombre, this.fecha, this.about);
-  this.sProyectos.save(proye).subscribe(data => {alert("Proyecto añadido");
+  this.servProye.save(proye).subscribe(data => {alert("Proyecto añadido");
   this.router.navigate(['']);
       }, err => {
         alert("Falló");

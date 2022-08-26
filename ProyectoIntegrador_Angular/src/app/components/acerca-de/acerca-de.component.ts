@@ -9,14 +9,18 @@ import { PersonaService } from 'src/app/service/persona.service';
 })
 export class AcercaDeComponent implements OnInit {
   persona: persona = new persona("","","","","","");
+  inputValue: string;
 
   constructor(public personaService: PersonaService) { }
 
   ngOnInit(): void {
     this.personaService.getPersona().subscribe(data => {this.persona = data})
   }
-    
+
  
+  public setInput(value: string): void{
+    this.inputValue = value;
+  }
 
 
 

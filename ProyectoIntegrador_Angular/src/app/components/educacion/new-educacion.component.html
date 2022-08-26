@@ -1,24 +1,21 @@
-<div class="container">
+<div class="container col-6 border border-white border-3 rounded-2 border-light position-absolute top-50 start-50 translate-middle p-4" style="background-color: white">
     <div class="row">
         <div>
-            <form ngForm #F="ngForm" (ngSubmit)="onCreate()" novalidate >
-            <div class="form-group">
-                <label for="carrera">Nombre del estudio</label>
-                <input type="text" class="form-control" id="carrera" name="carrera" [(ngModel)]="carrera" required>
+            <form ngForm #F="ngForm" (ngSubmit)="onCreate()" novalidate>
+                <h4 class="mb-4" style="font-weight: bold">Agregá tus nuevos estudios</h4>
+            <div class="form-group  mb-3">
+                <label class="mb-2" for="carrera" style="font-weight: bold">Nombre</label>
+                <input type="text" class="form-control" placeholder="Ingeniería en Informática" id="carrera" name="carrera" [(ngModel)]="carrera" required>
             </div>
-            <div class="form-group">
-                <label for="institucion">Institución</label>
-                <input type="text" class="form-control" id="institucion" name="institucion" [(ngModel)]="institucion" required>
+            <div class="form-group  mb-3">
+                <label class="mb-2" for="institucion" style="font-weight: bold">Institución</label>
+                <input type="text" class="form-control" placeholder="Universidad de Buenos Aires" id="institucion" name="institucion" [(ngModel)]="institucion" required>
             </div>
-            <div class="form-group">
-                <label for="fecha">Fecha</label>
-                <input type="text" class="form-control" id="fecha" name="fecha" [(ngModel)]="fecha" required>
+            <div class="form-group  mb-3">
+                <label class="mb-2" for="fecha" style="font-weight: bold">Fecha</label>
+                <input type="text" class="form-control" placeholder="2018-2022" id="fecha" name="fecha" [(ngModel)]="fecha" required>
             </div>
-           <div class="form-group">
-                <label for="img">Imagen</label>
-                <input type="text" class="form-control" id="img" name="img" [(ngModel)]="img" >
-            </div> 
-            <button type="submit" class="btn btn-dark">Agregar educación</button>
+            <button type="submit" class="btn btn-dark mt-3">Agregar educación</button>
             </form>
         </div>
     </div>

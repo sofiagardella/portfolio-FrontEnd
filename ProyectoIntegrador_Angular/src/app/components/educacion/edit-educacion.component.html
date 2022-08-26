@@ -1,24 +1,21 @@
-<div class="container" *ngIf="educacion">
+<div class="container col-6 border border-white border-3 rounded-2 border-light position-absolute top-50 start-50 translate-middle p-4" *ngIf="educacion">
     <div class="row">
         <div>
             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
-                <div class="form-group">
-                    <label for="carrera">Nombre del puesto</label>
+                <h4 class="mb-4" style="font-weight: bold">Editá tu educación</h4>
+                <div class="form-group mb-3">
+                    <label class="mb-2" for="carrera" style="font-weight: bold">Nombre</label>
                     <input type="text" class="form-control" id="carrera" name="carrera" [(ngModel)]="educacion.carrera" required>
                 </div>
-                <div class="form-group">
-                    <label for="institucion">Empresa</label>
+                <div class="form-group mb-3">
+                    <label class="mb-2" for="institucion" style="font-weight: bold">Intitución</label>
                     <input type="text" class="form-control" id="institucion" name="institucion" [(ngModel)]="educacion.institucion" required>
                 </div>
-                <div class="form-group">
-                    <label for="fecha">Fecha(desde-hasta)</label>
+                <div class="form-group mb-3">
+                    <label class="mb-2" for="fecha" style="font-weight: bold">Fecha</label>
                     <input type="text" class="form-control" id="fecha" name="fecha" [(ngModel)]="educacion.fecha" required>
                 </div>
-                <div class="form-group">
-                    <label for="img">Imagen</label>
-                    <input type="text" class="form-control" id="img" name="img" [(ngModel)]="educacion.img">
-                </div>
-                <button type="submit" class="btn btn-dark">
+                <button type="submit" class="btn btn-dark mt-3">
                     Actualizar educación
                 </button>
             </form>

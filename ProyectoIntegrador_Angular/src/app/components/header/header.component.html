@@ -1,21 +1,19 @@
 <nav class="navbar" style="background-color: #ffff">
     <div class="container-fluid">
-
-        <div class="col-6"><a class="navbar-brand" href="#"><img src="https://www.concordia.gob.ar/sites/all/themes/programar/images/arg-programa.png" alt="" height="24"></a></div>
-<div class="row d-flex flex-row-reverse">
-            <div class="col-1"><a href="#"><i class="fa-brands fa-github"></i></a></div>
-            <div class="col-1"><a href="#"><i class="fa-brands fa-linkedin"></i></a></div>
+        <div class="col-6"><a class="navbar-brand" href="#"><img
+                    src="https://www.concordia.gob.ar/sites/all/themes/programar/images/arg-programa.png" alt=""
+                    height="24"></a></div>
+        <div class="row d-flex flex-row-reverse">
+            <div class="col-1"><a href="https://github.com/sofiagardella"><i class="fa-brands fa-github"></i></a></div>
+            <div class="col-1"><a href="https://linkedin.com/in/sofiagardella"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
         </div>
-
-            <div class=""><button type="button" class="btn btn-secondary d-grid gap-2 justify-content-md-end" (click)="login()">Iniciar sesión</button></div>
-
+        <div class=""><button type="button" class="btn btn-secondary d-grid gap-2 justify-content-md-end"
+                (click)="login()" *ngIf="!isLogged">Iniciar sesión</button></div>
+                <div class=""><button type="button" class="btn btn-secondary d-grid gap-2 justify-content-md-end"
+                    (click)="onLogOut()" *ngIf="isLogged">Cerrar sesión</button></div>
     </div>
 </nav>
-
-<!-- "https://wallpaperboat.com/wp-content/uploads/2019/12/foggy-forest-01.jpg" -->
-<!-- HEADER -->
 <div id="header" class="container mt-3 p-0">
     <img id="banner" src="assets/keyboardedited.png" alt="">
-    <div id="editar-banner" class="row col-1 btn-edit"><a href="#" class="btn-right">
-        <i class="fa-solid fa-pen-to-square"></i></a></div>
 </div>
