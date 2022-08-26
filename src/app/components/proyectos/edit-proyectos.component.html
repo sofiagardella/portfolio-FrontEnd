@@ -1,0 +1,24 @@
+<div class="container col-6 border border-white border-3 rounded-2 border-light position-absolute top-50 start-50 translate-middle p-4" *ngIf="proyectos">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <h4 class="mb-4" style="font-weight: bold">Editá tu proyecto</h4>
+                <div class="form-group">
+                    <label class="mb-2" for="nombre">Nombre del proyecto</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="proyectos.nombre" required>
+                </div>
+                <div class="form-group">
+                    <label class="mb-2" for="fecha">Fecha</label>
+                    <input type="text" class="form-control" id="fecha" name="fecha" [(ngModel)]="proyectos.fecha" required>
+                </div>
+                <div class="form-group">
+                    <label class="mb-2" for="about">Descripción</label>
+                    <input type="text" class="form-control" id="about" name="about" [(ngModel)]="proyectos.about" required>
+                </div>
+                <button type="submit" class="btn btn-dark mt-3">
+                    Actualizar proyecto
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

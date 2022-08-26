@@ -1,0 +1,36 @@
+#info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#profile-image {
+    border-radius: 50%;
+    width: 152px;
+    height: 152px;
+    margin-top: -70px;
+    z-index: 1;
+}
+
+#info-img{
+    margin-top: -120;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#datos-personales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+#container{
+    background-color: #ffffff;
+
+}
