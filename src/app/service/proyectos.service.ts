@@ -7,7 +7,7 @@ import { Proyectos } from '../model/proyectos';
   providedIn: 'root'
 })
 export class ProyectosService {
-  proyectosURL = "http://localhost:8080/proye/"
+  proyectosURL = "https://portfolio-sofg.herokuapp.com/proye/"
 
   constructor(private httpClient: HttpClient) { }
 
