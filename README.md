@@ -1,27 +1,30 @@
-# ProyectoIntegradorAngular
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Proyecto Integrador Portfolio Web Full Stack 🖐
+>Esta es una aplicación web full stack que permite mostrar diferentes datos de una persona, como datos personales, estudios cursados, experiencia laboral, conocimiento de las tecnologías
+ y sus proyectos. Fue realizada como proyecto integrador para Argentina Programa.
+ 
+ # Link de acceso 📎
+ https://portfolio-sofg.web.app/
+ 
+ # Usabilidad 🖱
+ 
+ > En la parte superior derecha se encuentra el botón para iniciar sesión con usuario y contraseña, y así poder agregar, editar o eliminar datos (signo +, icono de lapiz, icono de cesto de basura, respectivamente).  
+ Una vez que se inicie la sesión, el mismo botón tendrá la opción de cerrar la sesión.   
+ Al seleccionar alguna de las opciones de modificación de datos, se desplegará
+ un formulario con los campos a completar o editar, con referencias de ayuda.
+ 
+ # Tecnologías utilizadas 🔨
+ 
+ • Angular  
+ • Bootstrap  
+ • Java  
+ • MySql  
+ • Postman  
+ • Springboot  
+ • Firebase  
+ • Heroku  
+ • Clever Cloud
+ 
+ # Desarrollador/a del proyecto 👩‍💻
+ Sofia Gardella   
+ https://github.com/sofiagardella
+ 
